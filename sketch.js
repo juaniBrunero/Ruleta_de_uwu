@@ -35,8 +35,8 @@ function setup() {
 }
 
 function draw() {
-  fill(0)
-  triangle(ancho-50, (alto/2) - 30, ancho-50, (alto/2) + 30, ancho-120, (alto/2));
+  fill(255)
+  triangle(ancho-100, (alto/2) - 30, ancho-100, (alto/2) + 30, ancho-160, (alto/2));
 
   if(acum <= (n * ang) + ang/2){
     spin()
@@ -53,6 +53,7 @@ function selectWinner(){
 function spin(){
   push()
   textAlign(CENTER)
+  textFont('Bebas Neue Regular')
   translate(ancho/2 - 50, alto/2)
   rotate(acum)
   textSize(28)
