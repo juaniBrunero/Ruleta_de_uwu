@@ -12,7 +12,7 @@ let textos = [
   "Duplico DPI"
 ]
 
-let ancho, alto, circulo, n, titulos, ang, acum
+let ancho, alto, circulo, n, titulos, ang
 
 function setup() {
   ancho = windowWidth
@@ -57,12 +57,12 @@ function spin(){
   rotate(acum)
   textSize(28)
   for (var i = 0; i < titulos; i++) {
-    //fill(120 + 125 * (i / titulos ))
-    (i%2 == 0)? fill(200, 20, 20) : fill(0)
+    //fill(60 + 125 * (i / titulos ))
+    (i%2 == 0)? fill(255, 70, 85) : fill(16, 24, 37)
     arc(0, 0, circulo, circulo, 0, ang, PIE);
     rotate(ang/2)
     fill(255)
-    text(textos[i], circulo/4 + 10, 14)
+    text(textos[i], circulo/4 + 20, 14)
     rotate(ang/2)
   }
   pop()
